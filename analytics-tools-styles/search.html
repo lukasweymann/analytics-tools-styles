@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="search.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search - Datailor - Clean corpora without suffering</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        src="img/datailor-logo.svg"
+        alt="datailor-logo"
+        class="logo-datailor"
+      />
+    </div>
+    <h1 class="datasets-catalogue-title">
+      DATASETS CATALOGUE | <span>12.486 datasets</span>
+    </h1>
+    <div class="search-inputs">
+      <input type="text" placeholder="Search dataset" />
+      <button class="search-button">MONOLINGUAL</button
+      ><button class="search-button">BILINGUAL</button>
+      <select id="origin-language" name="target-language">
+        <option value="volvo">Origin language</option>
+        <option value="saab">English</option>
+        <option value="fiat">German</option>
+        <option value="audi">Spanish</option>
+      </select>
+      <select id="target-language" name="target-language">
+        <option value="volvo">Target language</option>
+        <option value="saab">English</option>
+        <option value="fiat">German</option>
+        <option value="audi">Spanish</option>
+      </select>
+    </div>
+    <div class="dataset-container">
+      <div class="dataset">
+        <div class="dataset-name">
+          <h3 class="dataset-title">bible</h3>
+          <button class="download-dataset-button">
+            Download
+            <i
+              data-feather="download-cloud"
+              class="download-icon"
+              stroke-width="2"
+            ></i>
+          </button>
+        </div>
+        <div class="metadata-dataset">
+          <span>Bible</span><span>Opus</span><span>V8</span><span>en-fi</span
+          ><span>1.18GB</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

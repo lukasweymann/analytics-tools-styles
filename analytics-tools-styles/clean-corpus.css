@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.search-page-container {
+  display: flex;
+}
+i {
+  width: 24px;
+  height: 24px;
+}
+
+body {
+  margin: 20px 60px;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+.import-data-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0 30px;
+  background-color: #17223d;
+  color: #e4960e;
+  font-size: 18px;
+}
+.import-data-icon {
+  margin-left: 5px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.search-table-container {
+  width: 70%;
+}
+table {
+  border: 1px solid #1c3948;
+  text-align: left;
+  background-color: #e3eaeb;
+  row-gap: 10px;
+}
+
+table thead {
+  color: #e4960e;
+  background-color: #17223d;
+}
+
+table thead th {
+  padding: 20px 0 10px 10px;
+}
+table thead tr {
+  margin-bottom: 10px;
+}
+
+table tbody td {
+  border: 1px solid #1c3948;
+  padding: 10px;
+  color: #1d4149;
+  line-height: 1.4;
+}
+
+/*----- TABLE BUTTONS ----*/
+
+.table-buttons-and-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.original {
+  background-color: transparent;
+  color: #17223d;
+  margin-right: 20px;
+  padding: 2px 20px;
+  border-radius: 2px;
+  border: 2.3px solid #e4960e;
+}
+
+.clean,
+.changes {
+  padding: 2px 20px;
+  border-radius: 2px;
+}
+
+.clean {
+  background-color: #e4960e;
+}
+
+.changes {
+  color: #e4960e;
+  background-color: #17223d;
+}
+.filter-container {
+  margin-left: 20px;
+  border: 1px solid #17223d;
+  width: 30%;
+  margin-top: 34px;
+  border-radius: 2px;
+}
+.filter-input {
+  background-color: #17223d;
+  padding: 12px 0 12px 12px;
+}
+
+.filter-input input {
+  width: 65%;
+  border: 2px solid #e4960e;
+  border-radius: 2px;
+  height: 28px;
+}
+
+.filter-input input::placeholder {
+  padding-left: 7px;
+}
+
+.filter-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-bottom: 3px solid #313640;
+}

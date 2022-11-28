@@ -1,0 +1,93 @@
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  width: 24px;
+  height: 24px;
+}
+
+body {
+  margin: 20px 60px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.datasets-catalogue-title {
+  font-size: 20px;
+  color: #182231;
+}
+
+.datasets-catalogue-title span {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.search-inputs {
+  margin: 10px 0 20px 0;
+}
+.search-button {
+  background-color: #e4960e;
+  color: #182231;
+  border: none;
+  border-radius: 2px;
+  height: 28px;
+  padding: 0 8px;
+  margin: 0 2px;
+}
+
+.search-inputs input {
+  height: 28px;
+  border-radius: 3px;
+}
+
+.search-inputs input::placeholder {
+  padding-left: 5px;
+}
+
+.search-inputs select {
+  height: 28px;
+  border-radius: 3px;
+}
+
+.dataset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #dbe5e6;
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  height: 120px;
+}
+.dataset-name {
+  display: flex;
+  justify-content: space-between;
+}
+.dataset-title {
+  font-size: 26px;
+}
+
+.metadata-dataset span {
+  margin-right: 20px;
+}
+
+.download-dataset-button {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  padding: 2px 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: #dfbd79;
+}
+.download-icon {
+  margin-left: 5px;
+}

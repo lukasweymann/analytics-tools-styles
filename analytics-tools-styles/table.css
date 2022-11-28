@@ -1,0 +1,264 @@
+/*---- CSS VARIABLES -----*/
+
+/*---- GENERAL STYLING -----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  width: 24px;
+  height: 24px;
+}
+
+body {
+  margin: 20px 60px;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+.import-data-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0 30px;
+  background-color: #17223d;
+  color: #e4960e;
+  font-size: 18px;
+}
+.import-data-icon {
+  margin-left: 5px;
+}
+/*---- TABLE STYLING -----*/
+.datasets-table {
+  border: 2px solid #1c3948;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.datasets-table thead {
+  background-color: #17223d;
+  color: #e4960e;
+  font-size: 20px;
+  text-align: left;
+}
+tbody {
+  color: #17223d;
+}
+.datasets-table thead th {
+  padding: 20px 0px 10px 10px;
+  min-width: 150px;
+}
+.datasets-table tbody tr {
+  border-bottom: 1px solid #1c3948;
+  border-right: 2px solid #1c3948;
+}
+.datasets-table tbody td {
+  border-right: 2px solid #1c3948;
+}
+.datasets-table tbody tr td {
+  padding: 10px;
+}
+
+.category-tags {
+  display: flex;
+}
+.tags-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tags {
+  width: 45%;
+  font-family: "Fira Code", monospace;
+}
+
+.filter-steps {
+  text-align: right;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px 20px 3px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.green-tag {
+  background-color: #afffca;
+}
+
+.red-tag {
+  background-color: #ffafaf;
+}
+
+.blue-tag {
+  background-color: #afcfff;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  border-radius: 2px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  font-family: "Lato", sans-serif;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -9px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-tags {
+  margin-top: 3px;
+  border: 8px solid #71989b;
+}
+
+.tag-filter {
+  border-bottom: 2px solid #aaa;
+}
+.tags-buttons-modal {
+  display: flex;
+}
+.tag-button {
+  width: 49%;
+  background-color: transparent;
+  color: #17223d;
+  margin-top: 3px;
+  padding: 3px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-label-button {
+  margin-right: 4px;
+}
+
+.icon-tag-button {
+  margin-left: 5px;
+}
+
+.modal-tags-container {
+  padding: 5px;
+  font-family: "Fira Code", monospace;
+  font-size: 10px;
+}
+.create-title {
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  width: 100%;
+}
+.tag-filter input {
+  margin: 3px 6px;
+  border: 2px solid #71989b;
+  height: 26px;
+  border-radius: 2px;
+}
+.modal-tags-container .tag {
+  margin-bottom: 5px;
+}
+.tag-filter input::placeholder {
+  padding-left: 5px;
+}
+.colors {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 10px;
+  margin-top: 15px;
+}
+.color {
+  width: 27px;
+  height: 27px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.modal-content-colors {
+  font-family: "Lato", sans-serif;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px -12px;
+}
+
+.buttons-create-tag {
+  margin-top: 15px;
+}
+
+.create-title,
+.create-colors {
+  padding: 20px;
+}
+
+.create-button,
+.cancel-button {
+  width: 48%;
+  height: 28px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: rgb(170, 3, 3);
+  font-weight: 500;
+}
+
+.create-button {
+  margin-right: 3px;
+  color: #17223d;
+}
+.footer {
+  display: flex;
+  width: 75%;
+  margin: 60px 0;
+  font-family: "Lato", sans-serif;
+}
+.eu-flag {
+  width: 50px;
+  margin-top: 35px;
+}
+
+.thanking p {
+  max-width: 90%;
+}
